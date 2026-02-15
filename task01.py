@@ -19,7 +19,7 @@ df.tail(10)
 """
 
 #Missing values are age, cabin, and embarked
-df["Age"] = df["Age"].fillna(df["Age"].mean())
+df["Age"] = df["Age"].fillna(df["Age"].median())
 
 #Cabin and Embarked are types object
 df[["Cabin", "Embarked"]] = df[["Cabin", "Embarked"]].fillna("Unknown")
