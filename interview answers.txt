@@ -1,0 +1,15 @@
+1. There are different types of missing data which are MCAR (Missing Completely at Random), MAR (Missing at Random), 
+MNAR (Missing Not at Random). Age and Embarked are MAR while Cabin is MNAR
+2. The intern uses Label Encoding for the Sex and Cabin columns while the Embarked uses target encoding which is targeted the Survived column
+3. Normalization rescales data to a range like 0 to 1, while standardization rescales data to have a mean of 0 and a standard deviation of 1. 
+Normalization is good for scaling values, and standardization is useful when data needs to follow a standard distribution.
+4. To detect outliers, the intern first use standardization for 'Fare' column and visualize through a boxplot.
+5. Preprocessing is important because it cleans and organizes data, 
+making it easier for a machine learning model to learn patterns. It also improves accuracy and performance 
+by handling missing values, scaling numbers, and converting categories into a usable format.
+6. One-hot encoding converts each category into a separate binary column (0 or 1) and is used for nominal data with no order. While, label encoding assigns an integer 
+to each category and is best for ordinal data or tree-based models, but it can create a false order if used on nominal data.
+7. Data imbalance can be handled by resampling techniques, like oversampling the minority class (e.g., SMOTE) or undersampling the majority class.
+Alternatively, you can use class weighting in the model or specialized algorithms that account for imbalance to improve performance.
+8. Yes.
+
